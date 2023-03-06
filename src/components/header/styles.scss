@@ -1,0 +1,43 @@
+.header {
+  height: 75px;
+  width: calc(100vw - 250px);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 2px dashed var(--line-color);
+
+  &__username {
+    margin: 10px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  &__action-icons {
+    display: flex;
+  }
+
+  .icon-container {
+    padding: 10px;
+    border-radius: 50%;
+    line-height: 0;
+    background-color: var(--light-blue-color);
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .user-profile {
+    margin: 5px 10px 0 10px;
+    cursor: pointer;
+  }
+
+  .user-profile {
+    &__icon {
+      margin: 5px 10px 0 10px;
+      cursor: pointer;
+    }
+    .popover {
+      font-size: 2rem !important;
+    }
+  }
+}
