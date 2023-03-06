@@ -1,0 +1,32 @@
+.side-menu {
+  min-height: 100vh;
+  background-color: var(--sidebar-background);
+
+  position: relative;
+
+  &__icon-container {
+    background-color: var(--light-blue-color);
+    padding: 6px;
+    border-radius: 5px;
+    line-height: 0;
+
+    &.active {
+      background-color: var(--blue-color);
+    }
+  }
+
+  &__collapse-button {
+    position: absolute;
+    top: 50;
+  }
+
+  &__menu-item {
+    margin: 30px 0;
+  }
+}
+
+// Pro slider css override
+.ps-sidebar-container,
+.ps-menu-button {
+  background-color: var(--sidebar-background) !important;
+}
