@@ -1,11 +1,11 @@
 // src/components/PieChart.js
 import React from "react";
-import { Doughnut } from "react-chartjs-2";
+import { Bar } from "react-chartjs-2";
 
-function DoughnutChart({ chartData }) {
+function BarChart({ chartData }) {
   return (
     <div className="chart-container">
-      <Doughnut
+      <Bar
         data={chartData}
         options={{
           plugins: {
@@ -18,4 +18,4 @@ function DoughnutChart({ chartData }) {
     </div>
   );
 }
-export default DoughnutChart;
+export default BarChart;
