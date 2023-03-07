@@ -1,0 +1,10 @@
+.icon-container {
+  background-color: var(--light-blue-color);
+  padding: 6px;
+  border-radius: var(--border-radius);
+  line-height: 0;
+
+  &.active {
+    background-color: var(--blue-color);
+  }
+}

@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import "./styles.scss";
-import { Sidebar, Menu, MenuItem, SubMenu, useProSidebar } from "react-pro-sidebar";
+
+import { Sidebar, Menu, SubMenu, useProSidebar } from "react-pro-sidebar";
 import { Dashboard, Investor, Discount, Reports, Transfer } from "../../assets";
+
+import { Icon } from "../ui-components/atoms";
 
 const MenuSidebar = () => {
   const { collapseSidebar } = useProSidebar();
@@ -15,18 +18,22 @@ const MenuSidebar = () => {
     {
       label: "Investor",
       icon: <Investor />,
+      isActive: false,
     },
     {
       label: "Offerings",
       icon: <Discount />,
+      isActive: false,
     },
     {
       label: "Reporting",
       icon: <Reports />,
+      isActive: false,
     },
     {
       label: "Transfers",
       icon: <Transfer />,
+      isActive: false,
     },
   ]);
 
@@ -39,7 +46,7 @@ const MenuSidebar = () => {
               active={item?.isActive}
               className="side-menu__menu-item"
               key={index}
-              icon={<div className={`side-menu__icon-container ${item?.isActive ? "active" : ""}`}>{item?.icon}</div>}
+              icon={<Icon iconElement={item?.icon} isActive={item?.isActive} />}
               label={item?.label}
             ></SubMenu>
           ))}

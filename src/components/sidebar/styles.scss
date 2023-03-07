@@ -4,17 +4,6 @@
 
   position: relative;
 
-  &__icon-container {
-    background-color: var(--light-blue-color);
-    padding: 6px;
-    border-radius: 5px;
-    line-height: 0;
-
-    &.active {
-      background-color: var(--blue-color);
-    }
-  }
-
   &__collapse-button {
     position: absolute;
     top: 50;

@@ -34,7 +34,7 @@ const Header = () => {
         <div>
           <Popover
             open={openUserModal}
-            onOpenChange={(newOpen) => setOpenUserModal(newOpen)}
+            onOpenChange={(state) => setOpenUserModal(state)}
             content={userPopoverContent}
             trigger="click"
             overlayClassName="user-profile"
