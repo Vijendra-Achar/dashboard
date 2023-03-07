@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
+
+import Chart from "chart.js/auto";
+import { CategoryScale } from "chart.js";
 
 import "./App.scss";
 import Header from "./components/header";
 import Sidebar from "./components/sidebar";
 
 import Dashboard from "./components/dashboard";
+
+Chart.register(CategoryScale);
 
 function App() {
   return (
