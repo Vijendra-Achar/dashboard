@@ -1,3 +1,18 @@
 .box-container {
-  width: 75%;
+  width: 100%;
+}
+
+.dashboard {
+  &-container {
+    width: 100%;
+    display: flex;
+  }
+
+  &__left-side {
+    width: 75%;
+  }
+
+  &__right-side {
+    width: 25%;
+  }
 }
